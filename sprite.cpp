@@ -16,7 +16,8 @@ void Sprite::init()
         }
     }
     else
-        std::cout << "erro" << std::endl;
+        std::cerr << "erro" << std::endl;
+    arquive.close(); 
 
 }
 

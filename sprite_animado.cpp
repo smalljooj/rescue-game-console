@@ -19,6 +19,7 @@ void Sprite_animado::init()
         }
     }
     cont_sprite++;
+    arquive.close();
 
 }
 
@@ -55,6 +56,7 @@ void Sprite_animado::update()
 
     }
     cont_sprite++;
+    arquive.close();
 }
 
 void Sprite_animado::draw()
