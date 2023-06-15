@@ -29,7 +29,7 @@ void Sprite_animado::update()
     std::ostringstream sstream;
     sstream << name << "_" << cont_sprite << ".txt";
 
-    std::ifstream arquive (name);
+    std::ifstream arquive(sstream.str());
     std::string line;
     if(arquive.is_open())
     {
@@ -40,7 +40,7 @@ void Sprite_animado::update()
     }
     else 
     {
-        cont_sprite = 0;
+        cont_sprite = 1;
         std::ostringstream sstream;
         sstream << name << "_" << 1 << ".txt";
         arquive.open(sstream.str());

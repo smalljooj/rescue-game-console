@@ -1,4 +1,5 @@
 #include "sprite.h"
+#include <iostream>
 
 Sprite::Sprite(std::string const& name): name(name){ }
 
@@ -14,6 +15,8 @@ void Sprite::init()
            sprite.push_back(line); 
         }
     }
+    else
+        std::cout << "erro" << std::endl;
 
 }
 
