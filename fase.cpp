@@ -9,6 +9,7 @@ Fase::Fase()
 void Fase::run()
 {
     char input;
+    heli_fuel = 300;
     while(true)
     {
         draw();
